@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         textTheme: const TextTheme(
           bodyMedium: TextStyle(),
         ).apply(
-          bodyColor: CustomColor.secondaryColor,
+          bodyColor: CustomColor.white,
         ),
         appBarTheme: const AppBarTheme(color: CustomColor.primaryColor),
         scaffoldBackgroundColor: CustomColor.primaryColor,

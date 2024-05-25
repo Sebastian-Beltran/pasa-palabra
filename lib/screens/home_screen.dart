@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:pasa_palabra/screens/widgets/answer_buttons_widget.dart';
+import 'package:pasa_palabra/screens/widgets/question_answer.dart';
+import 'package:pasa_palabra/screens/widgets/timer_widget.dart';
+import 'package:pasa_palabra/screens/widgets/word_widget.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({
@@ -16,11 +20,21 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(),
       body: const Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Pasa palabra',
+              'Palabra',
+              style: TextStyle(
+                fontSize: 30,
+              ),
             ),
+            SizedBox(height: 30),
+            WordWidget(),
+            SizedBox(height: 30),
+            TimerWidget(),
+            SizedBox(height: 100),
+            QuestionAnswer(),
+            SizedBox(height: 35),
+            AnswerButtons(),
           ],
         ),
       ),
