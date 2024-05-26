@@ -5,9 +5,7 @@ import 'package:pasa_palabra/screens/widgets/timer_widget.dart';
 import 'package:pasa_palabra/screens/widgets/word_widget.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({
-    super.key,
-  });
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();

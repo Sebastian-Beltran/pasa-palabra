@@ -11,7 +11,8 @@ class AnswerButtons extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         ButtonWidget(icon: Icons.check, color: CustomColor.greenCorrect),
-        ButtonWidget(icon: Icons.skip_next, color: CustomColor.aquamarineGreen),
+        ButtonWidget(
+            icon: Icons.navigate_next, color: CustomColor.aquamarineGreen),
         ButtonWidget(icon: Icons.close, color: CustomColor.errorRed),
       ],
     );

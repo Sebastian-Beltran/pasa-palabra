@@ -7,4 +7,5 @@ class CustomColor {
   static const aquamarineGreen = Color.fromRGBO(0, 218, 181, 1);
   static const greenCorrect = Color.fromRGBO(36, 197, 42, 1);
   static const errorRed = Color.fromRGBO(215, 53, 53, 1);
+  static const grey = Color.fromRGBO(184, 184, 184, 1);
 }
