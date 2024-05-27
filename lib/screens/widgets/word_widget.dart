@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/instance_manager.dart';
 import 'package:pasa_palabra/controller/letter_controller.dart';
+import 'package:pasa_palabra/models/letter_model.dart';
 import 'package:pasa_palabra/screens/widgets/letter_widget.dart';
 import 'package:pasa_palabra/ui/styles.dart';
 
@@ -26,8 +27,12 @@ class WordWidget extends StatelessWidget {
               ...letterList.map(
                 (e) {
                   return LetterWidget(
-                    letter: e,
-                    color: getColorLetter(letterState.letterState),
+                    letterModel: LetterModel(
+                      letter: e,
+                      colorLetter: getColorLetter(
+                        letterState.letterState,
+                      ),
+                    ),
                   );
                 },
               )

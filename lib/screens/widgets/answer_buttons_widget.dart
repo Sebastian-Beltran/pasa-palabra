@@ -19,7 +19,8 @@ class AnswerButtons extends StatelessWidget {
           color: CustomColor.greenCorrect,
           onPress: () {
             return letterController.answerLetter(
-                answer: StateLetterEnum.correct);
+              answer: StateLetterEnum.correct,
+            );
           },
         ),
         ButtonWidget(

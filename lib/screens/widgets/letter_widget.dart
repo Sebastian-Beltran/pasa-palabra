@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:pasa_palabra/ui/styles.dart';
+import 'package:pasa_palabra/models/letter_model.dart';
 
 class LetterWidget extends StatelessWidget {
   const LetterWidget({
-    required this.letter,
-    this.color = CustomColor.secondaryColor,
+    required this.letterModel,
     super.key,
   });
 
-  final String letter;
-  final Color color;
+  final LetterModel letterModel;
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +17,12 @@ class LetterWidget extends StatelessWidget {
         width: 60,
         height: 60,
         decoration: BoxDecoration(
-          color: color,
+          color: letterModel.colorLetter,
           borderRadius: BorderRadius.circular(80.0), // Esquinas redondeadas
         ),
         child: Center(
           child: Text(
-            letter,
+            letterModel.letter,
             style: const TextStyle(
               fontSize: 45,
               fontWeight: FontWeight.bold,

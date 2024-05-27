@@ -11,13 +11,11 @@ class LetterController extends GetxController {
 
   void answerLetter({required StateLetterEnum answer}) {
     stateLetter = answer;
+    update();
   }
 
   void wordStateManager({required String word}) {
     List<String> letterList = word.split('');
     letter = letterList.first;
   }
-
-  //Crear metodo para pasar a la siguiente letra este deberia
-  // pasar al siguiente caracter
 }
