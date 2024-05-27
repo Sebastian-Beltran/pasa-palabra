@@ -5,11 +5,13 @@ class ButtonWidget extends StatelessWidget {
   const ButtonWidget({
     required this.icon,
     required this.color,
+    required this.onPress,
     super.key,
   });
 
   final IconData icon;
   final Color color;
+  final VoidCallback onPress;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class ButtonWidget extends StatelessWidget {
             icon: Icon(icon),
             iconSize: 50,
             color: CustomColor.white,
-            onPressed: () {},
+            onPressed: onPress,
           ),
         ),
       ),

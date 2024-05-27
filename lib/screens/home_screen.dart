@@ -16,22 +16,24 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: const Center(
+      body: Center(
         child: Column(
           children: <Widget>[
-            Text(
+            const Text(
               'Palabra',
               style: TextStyle(
                 fontSize: 30,
               ),
             ),
-            SizedBox(height: 30),
-            WordWidget(),
-            SizedBox(height: 30),
-            TimerWidget(),
-            SizedBox(height: 100),
-            QuestionAnswer(),
-            SizedBox(height: 35),
+            const SizedBox(height: 30),
+            WordWidget(
+              wordAnswer: 'PERRO',
+            ),
+            const SizedBox(height: 30),
+            const TimerWidget(),
+            const SizedBox(height: 100),
+            const QuestionAnswer(),
+            const SizedBox(height: 35),
             AnswerButtons(),
           ],
         ),

@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:pasa_palabra/ui/styles.dart';
 
 class TimerWidget extends StatefulWidget {
-  const TimerWidget({Key? key}) : super(key: key);
+  const TimerWidget({
+    super.key,
+  });
 
   @override
   State<TimerWidget> createState() => _TimerWidgetState();
